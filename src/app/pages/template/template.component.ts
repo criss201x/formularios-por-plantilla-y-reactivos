@@ -8,7 +8,7 @@ import { PaisService } from '../../services/pais.service';
   styleUrls: ['./template.component.css']
 })
 export class TemplateComponent implements OnInit {
-  usuario = {
+  usuario = {//cambiar tipo de dato 
     nombre: '',
     apellido: '',
     correo: '',
@@ -20,7 +20,7 @@ export class TemplateComponent implements OnInit {
 
   constructor(private paisService: PaisService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {// cambiar tipo de constructor 
     this.paisService.getPaises()
       .subscribe(paises => {
         this.paises = paises;
