@@ -21,7 +21,7 @@ export class ReactiveComponent implements OnInit {
 
   crearFormulario() {
     
-    this.forma = this.fb.group({//form group?
+    this.forma = this.fb.group({
       nombre: [''],
       apellido: [''],
       correo: ['']
